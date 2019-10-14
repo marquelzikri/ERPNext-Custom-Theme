@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include custom_theme *.css
+recursive-include custom_theme *.csv
+recursive-include custom_theme *.html
+recursive-include custom_theme *.ico
+recursive-include custom_theme *.js
+recursive-include custom_theme *.json
+recursive-include custom_theme *.md
+recursive-include custom_theme *.png
+recursive-include custom_theme *.py
+recursive-include custom_theme *.svg
+recursive-include custom_theme *.txt
+recursive-exclude custom_theme *.pyc

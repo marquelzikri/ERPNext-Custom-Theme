@@ -1,0 +1,11 @@
+{
+	"css/custom_theme.min.css": [
+        "public/css/bluetheme_layout.css",
+        "public/css/background_color.css",
+        "public/css/button_color.css",
+        "public/css/navbar_color.css",
+        "public/css/icons.css",
+        "public/css/text_box_color.css",
+        "public/css/text_color.css"
+	]
+}

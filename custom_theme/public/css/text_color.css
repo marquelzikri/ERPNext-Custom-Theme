@@ -1,0 +1,28 @@
+a {
+    color: #666;
+}
+
+a:hover, a:focus {
+    color: #2a60b3;
+}
+
+a.text-primary:hover {
+    color: #2a60b3
+}
+
+.list-sidebar .list-sidebar-label {
+    color: #3668b5;
+}
+
+
+.section-box h4 {
+    color: #3864a7
+}
+
+.text-primary {
+    color: #21529e
+}
+
+.page-card .page-card-head .indicator {
+    color: #2b72e0 !important;
+}
