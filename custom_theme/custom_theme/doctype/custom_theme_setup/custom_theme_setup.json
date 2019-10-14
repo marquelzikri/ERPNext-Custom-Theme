@@ -1,0 +1,84 @@
+{
+ "autoname": "custom_theme_setup",
+ "creation": "2019-10-15 06:20:46.582402",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "desk_section",
+  "desk_bg",
+  "button_section",
+  "button_bg",
+  "button_hover_bg",
+  "navbar_section",
+  "navbar_bg",
+  "navbar_search_bg"
+ ],
+ "fields": [
+  {
+   "fieldname": "desk_section",
+   "fieldtype": "Section Break",
+   "label": "Desk"
+  },
+  {
+   "default": "#f8f8f8",
+   "fieldname": "desk_bg",
+   "fieldtype": "Data",
+   "label": "Background Color"
+  },
+  {
+   "fieldname": "button_section",
+   "fieldtype": "Section Break",
+   "label": "Buttons"
+  },
+  {
+   "default": "#21539e",
+   "fieldname": "button_bg",
+   "fieldtype": "Data",
+   "label": "Background Color"
+  },
+  {
+   "fieldname": "navbar_section",
+   "fieldtype": "Section Break",
+   "label": "Navbar"
+  },
+  {
+   "default": "#1a3f77",
+   "fieldname": "navbar_bg",
+   "fieldtype": "Data",
+   "label": "Background Color"
+  },
+  {
+   "default": "#123263",
+   "fieldname": "navbar_search_bg",
+   "fieldtype": "Data",
+   "label": "Search Textbox Background Color"
+  },
+  {
+   "default": "#274b82",
+   "fieldname": "button_hover_bg",
+   "fieldtype": "Data",
+   "label": "Background Color on Mouse Hover"
+  }
+ ],
+ "issingle": 1,
+ "modified": "2019-10-15 06:31:11.240182",
+ "modified_by": "Administrator",
+ "module": "Custom Theme",
+ "name": "Custom Theme Setup",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
