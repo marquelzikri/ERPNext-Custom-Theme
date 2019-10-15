@@ -270,3 +270,7 @@ small, .small {
     vertical-align: bottom;
     background-size: contain !important;
 }
+
+#navbar-breadcrumbs, .nav.navbar-nav.navbar-right {
+    margin-top: 3px;
+}

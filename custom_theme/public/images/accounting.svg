@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
+<path style="fill:#FCF1ED;" d="M328,8H8v464h320V8z M40,184h256v48H40V184z M296,120H40V72h256V120z"/>
+<g>
+	<polygon style="fill:#F7CC40;" points="376,424 424,472 472,424 472,416 376,416 	"/>
+	<polygon style="fill:#F7CC40;" points="376,152 408,152 440,152 472,152 472,88 376,88 	"/>
+</g>
+<polygon style="fill:#69D6C7;" points="408,152 376,152 376,416 472,416 472,152 440,152 "/>
+<g>
+	<rect x="40" y="72" style="fill:#ED903B;" width="256" height="48"/>
+	<rect x="40" y="184" style="fill:#ED903B;" width="256" height="48"/>
+</g>
+<g>
+	<path style="fill:#212329;" d="M8,480h320c4.416,0,8-3.584,8-8V8c0-4.416-3.584-8-8-8H8C3.584,0,0,3.584,0,8v464
+		C0,476.416,3.584,480,8,480z M16,16h304v448H16V16z"/>
+	<path style="fill:#212329;" d="M472,80h-96c-4.416,0-8,3.584-8,8v336c0,2.12,0.84,4.16,2.344,5.656l48,48
+		c1.56,1.56,3.608,2.344,5.656,2.344s4.096-0.784,5.656-2.344l48-48C479.16,428.16,480,426.12,480,424V88
+		C480,83.584,476.416,80,472,80z M464,96v48h-24h-32h-24V96H464z M384,408V160h16v72c0,13.232,10.768,24,24,24s24-10.768,24-24v-72
+		h16v248H384z M416,160h16v72c0,4.408-3.592,8-8,8s-8-3.592-8-8V160z M424,460.688L387.312,424h73.376L424,460.688z"/>
+	<rect x="32" y="32" style="fill:#212329;" width="96" height="16"/>
+	<path style="fill:#212329;" d="M296,64H40c-4.416,0-8,3.584-8,8v48c0,4.416,3.584,8,8,8h256c4.416,0,8-3.584,8-8V72
+		C304,67.584,300.416,64,296,64z M288,112H48V80h240V112z"/>
+	<rect x="32" y="144" style="fill:#212329;" width="96" height="16"/>
+	<path style="fill:#212329;" d="M296,176H40c-4.416,0-8,3.584-8,8v48c0,4.416,3.584,8,8,8h256c4.416,0,8-3.584,8-8v-48
+		C304,179.584,300.416,176,296,176z M288,224H48v-32h240V224z"/>
+	<rect x="32" y="264" style="fill:#212329;" width="272" height="16"/>
+	<rect x="32" y="296" style="fill:#212329;" width="272" height="16"/>
+	<rect x="32" y="328" style="fill:#212329;" width="272" height="16"/>
+	<rect x="32" y="360" style="fill:#212329;" width="272" height="16"/>
+	<rect x="216" y="424" style="fill:#212329;" width="88" height="16"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
