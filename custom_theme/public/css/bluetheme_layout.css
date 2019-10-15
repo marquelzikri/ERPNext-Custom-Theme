@@ -2,15 +2,9 @@ body {
     font-family: Roboto, Arial, Droid Sans, sans-serif;
 }
 
-@media (max-width: 990px) {
-    .content .page-head {
-        margin-top: 45px;
-    }
-}
-
 /* Navbar */
 
-.navbar {
+.navbar, .navbar-header.navbar-desk {
     min-height: 46px;
 }
 
@@ -23,6 +17,26 @@ body {
     height: 35px;
 }
 
+.navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #ececec;
+}
+
+.navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #ececec !important;
+}
+
+@media (max-width: 410px) {
+    .navbar-header.navbar-desk {
+        width: auto !important;
+    }
+}
+
+@media (max-width: 765px) {
+    .navbar-header.navbar-desk {
+        margin-left: 1em !important;
+    }
+}
+
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand {
     color: #ffffff;
 }
@@ -31,12 +45,29 @@ body {
     color: #cccccc;
 }
 
-.navbar-form .awesomplete {
-    width: 400px;
+@media (min-width: 995px) {
+    /* Search bar */
+    .navbar-form .awesomplete {
+        width: 400px;
+    }
 }
 
-.navbar .navbar-home {
-    padding-top: 13px;
+body.no-breadcrumbs .navbar .navbar-home:before {
+    color: #ffffff;
+}
+
+/* app logo */
+.navbar .navbar-home>img {
+    min-height: 46px;
+    width: 4.5rem;
+    margin-top: -1rem !important;
+}
+
+/* @media (max-width: 765px) { */
+@media (max-width: 990px) {
+    .navbar .navbar-home>img {
+        margin-top: -0.7rem !important;
+    }
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -44,7 +75,7 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #c7c7c7
+    color: #c7c7c7;
 }
 
 .navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
@@ -55,17 +86,17 @@ body {
     color: #ffffff;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .navbar-nav {
         padding-top: 3px;
     }
-}
+} */
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) { // if logo width is too long
     .navbar-desk {
         width: 15% !important;
     }
-}
+} */
 
 /* end Navbar */
 
@@ -127,6 +158,16 @@ small, .small {
     border-bottom: 1px solid #eee;
 }
 
+@media (max-width: 990px) {
+    .content .page-head {
+        margin-top: 45px;
+    }
+
+    .content .page-body {
+        margin-top: 100px;
+    }
+}
+
 .module-box {
     border: 1px solid #eaeaea !important;
     border-radius: 0px !important;
@@ -141,10 +182,6 @@ small, .small {
 
 .btn-login {
     padding: 8px
-}
-
-.btn:hover {
-    color: #e7e7e7
 }
 
 .btn-sm, .btn-group-sm>.btn {

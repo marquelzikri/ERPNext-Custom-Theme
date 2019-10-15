@@ -1,3 +1,8 @@
 .form-control:focus {
     box-shadow: 0 0 0 0.05rem rgba(33, 82, 158, 0.62) !important;
 }
+
+.search-dialog input.form-control:focus {
+    outline: none;
+    box-shadow: none !important;
+}

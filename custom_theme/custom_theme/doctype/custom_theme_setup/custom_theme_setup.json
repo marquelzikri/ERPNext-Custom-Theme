@@ -8,8 +8,10 @@
   "desk_section",
   "desk_bg",
   "button_section",
-  "button_bg",
-  "button_hover_bg",
+  "primary_button_bg",
+  "primary_button_hover_bg",
+  "default_button_bg",
+  "default_button_hover_bg",
   "navbar_section",
   "navbar_bg",
   "navbar_search_bg"
@@ -24,18 +26,14 @@
    "default": "#f8f8f8",
    "fieldname": "desk_bg",
    "fieldtype": "Data",
-   "label": "Background Color"
+   "in_list_view": 1,
+   "label": "Background Color",
+   "reqd": 1
   },
   {
    "fieldname": "button_section",
    "fieldtype": "Section Break",
    "label": "Buttons"
-  },
-  {
-   "default": "#21539e",
-   "fieldname": "button_bg",
-   "fieldtype": "Data",
-   "label": "Background Color"
   },
   {
    "fieldname": "navbar_section",
@@ -46,23 +44,48 @@
    "default": "#1a3f77",
    "fieldname": "navbar_bg",
    "fieldtype": "Data",
-   "label": "Background Color"
+   "label": "Background Color",
+   "reqd": 1
   },
   {
    "default": "#123263",
    "fieldname": "navbar_search_bg",
    "fieldtype": "Data",
-   "label": "Search Textbox Background Color"
+   "label": "Search Textbox Background Color",
+   "reqd": 1
+  },
+  {
+   "default": "#21539e",
+   "fieldname": "primary_button_bg",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Button Primary Background Color",
+   "reqd": 1
   },
   {
    "default": "#274b82",
-   "fieldname": "button_hover_bg",
+   "fieldname": "primary_button_hover_bg",
    "fieldtype": "Data",
-   "label": "Background Color on Mouse Hover"
+   "in_list_view": 1,
+   "label": "Button Primary Background Color on Mouse Hover",
+   "reqd": 1
+  },
+  {
+   "fieldname": "default_button_bg",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Button Default Background Color",
+   "reqd": 1
+  },
+  {
+   "fieldname": "default_button_hover_bg",
+   "fieldtype": "Data",
+   "label": "Button Default Background Color on Mouse Hover",
+   "reqd": 1
   }
  ],
  "issingle": 1,
- "modified": "2019-10-15 06:31:11.240182",
+ "modified": "2019-10-15 16:49:08.832235",
  "modified_by": "Administrator",
  "module": "Custom Theme",
  "name": "Custom Theme Setup",
