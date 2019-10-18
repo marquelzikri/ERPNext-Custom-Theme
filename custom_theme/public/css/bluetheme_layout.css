@@ -274,3 +274,9 @@ small, .small {
 #navbar-breadcrumbs, .nav.navbar-nav.navbar-right {
     margin-top: 3px;
 }
+
+@media (max-width: 991px) {
+    body[data-route^="Form"] .page-title .indicator {
+        margin-top: 0 !important;
+    }
+}
