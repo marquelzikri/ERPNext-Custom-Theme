@@ -1,16 +1,16 @@
 
         .navbar-default {
-            background-color: #1a3f77;
-            border-color: #1a3f77;
+            background-color: #21539e;
+            border-color: #21539e;
         }
 
         .navbar-light {
-            background-color: #1a3f77 !important;
+            background-color: #21539e !important;
         }
 
         #navbar-search {
-            background-color: #123263;
-            border: 1px solid #123263;
+            background-color: #274b82;
+            border: 1px solid #274b82;
         }
 
         /* navbar ">" logo */

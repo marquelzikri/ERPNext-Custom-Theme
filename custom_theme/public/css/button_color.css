@@ -23,17 +23,17 @@
         }
 
         .btn-default {
-            background-color: #f0f4f7;
-            border-color: #f0f4f7;
+            background-color: #89D989;
+            border-color: #89D989;
         }
 
         .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
-            background-color: #cfdce5;
-            border-color: #cfdce5;
+            background-color: #6CAB6C;
+            border-color: #6CAB6C;
         }
 
         .btn-default:not(:disabled):not(.disabled):active, .btn-default:not(:disabled):not(.disabled).active, .show>.btn-default.dropdown-toggle {
-            background-color: #cfdce5;
-            border-color: #cfdce5;
+            background-color: #6CAB6C;
+            border-color: #6CAB6C;
         }
     

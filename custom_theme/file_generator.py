@@ -151,3 +151,34 @@ def generate_css(form_data):
     navbar_color_file.close()
 
     return "CSS files generated."
+
+@frappe.whitelist()
+def install_theme_icon():
+    path = str(Path(__file__).absolute())
+    erpnext_desktop_path = path.replace("custom_theme/custom_theme/file_generator.py", "erpnext/erpnext/config/desktop.py")
+    erpnext_desktop_backup_path = path.replace("file_generator.py", "desktop.erpnext.original.bak")
+    erpnext_desktop_custom_path = path.replace("file_generator.py", "desktop.erpnext")
+
+    frappe_desktop_path = path.replace("custom_theme/custom_theme/file_generator.py", "frappe/frappe/config/desktop.py")
+    frappe_desktop_backup_path = path.replace("file_generator.py", "desktop.frappe.original.bak")
+    frappe_desktop_custom_path = path.replace("file_generator.py", "desktop.frappe")
+
+    # backing up desktop.py
+    erpnext_desktop = open(erpnext_desktop_path, "r")
+    erpnext_desktop_backup = open(erpnext_desktop_backup_path, "w+")
+    erpnext_desktop_backup.write(erpnext_desktop.read())
+
+    frappe_desktop = open(frappe_desktop_path, "r")
+    frappe_desktop_backup = open(frappe_desktop_backup_path, "w+")
+    frappe_desktop_backup.write(frappe_desktop.read())
+
+    # install custom desktop.py
+    erpnext_custom = open(erpnext_desktop_custom_path, "r")
+    erpnext_original = open(erpnext_desktop_path, "w+")
+    erpnext_original.write(erpnext_custom.read())
+
+    frappe_custom = open(frappe_desktop_custom_path, "r")
+    frappe_original = open(frappe_desktop_path, "w+")
+    frappe_original.write(frappe_custom.read())
+
+    return str(erpnext_custom.read())

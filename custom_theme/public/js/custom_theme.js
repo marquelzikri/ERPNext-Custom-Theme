@@ -33,6 +33,18 @@ window.onload = () => {
 }
 
 frappe.ui.form.on('Custom Theme Setup', {
+  refresh(frm) {
+    cur_frm.add_custom_button(__("Install Icons"), function() {
+      frappe.call({
+        method: 'custom_theme.file_generator.install_theme_icon',        
+        callback: function(response) {
+          if (!response.exc) {
+            frappe.msgprint("Go to your bench folder and run bench restart")
+          }
+        }
+      });
+    });
+  },
   validate(frm) {
     frappe.call({
       method: 'custom_theme.file_generator.color_validation',

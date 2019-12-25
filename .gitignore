@@ -4,3 +4,4 @@
 *.swp
 tags
 custom_theme/docs/current
+*.original.bak
