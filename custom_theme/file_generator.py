@@ -40,14 +40,16 @@ def generate_css(form_data):
     
     primary_button_bg = form_data["primary_button_bg"]
     primary_button_hover_bg = form_data["primary_button_hover_bg"]
+    primary_button_font_color = form_data["primary_button_font_color"]
     default_button_bg = form_data["default_button_bg"]
     default_button_hover_bg = form_data["default_button_hover_bg"]
+    default_button_font_color = form_data["default_button_font_color"]
     
     navbar_bg = form_data["navbar_bg"]
     navbar_search_bg = form_data["navbar_search_bg"]
 
     bg_color_css = """
-        body {{
+        #page-desktop, #body_div {{
             background-color: {0};
         }}
 
@@ -65,44 +67,48 @@ def generate_css(form_data):
             color: #e7e7e7
         }} */
 
-        .btn-primary {{
+        #page-desktop .btn-primary, #body_div .btn-primary {{
             background-color: {0};
             border-color: {0};
+            color: {2};
         }}
 
-        .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {{
+        #page-desktop .btn-primary:hover, #page-desktop .btn-primary:focus, #page-desktop .btn-primary.focus, #page-desktop .btn-primary:active, #page-desktop .btn-primary.active, #page-desktop .open > .dropdown-toggle.btn-primary, #body_div .btn-primary:hover, #body_div .btn-primary:focus, #body_div .btn-primary.focus, #body_div .btn-primary:active, #body_div .btn-primary.active, #body_div .open > .dropdown-toggle.btn-primary {{
             background-color: {1};
             border-color: {1};
         }}
 
-        .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show>.btn-primary.dropdown-toggle {{
+        #page-desktop .btn-primary:not(:disabled):not(.disabled):active, #page-desktop .btn-primary:not(:disabled):not(.disabled).active, #page-desktop .show > .btn-primary.dropdown-toggle, #body_div .btn-primary:not(:disabled):not(.disabled):active, #body_div .btn-primary:not(:disabled):not(.disabled).active, #body_div .show > .btn-primary.dropdown-toggle {{
             background-color: {1};
             border-color: {1};
         }}
 
-        .btn-primary:focus, .btn-primary.focus {{
+        #page-desktop .btn-primary:focus, #page-desktop .btn-primary.focus, #body_div .btn-primary:focus, #body_div .btn-primary.focus {{
             box-shadow: 0 0 0 0.1rem rgba(74, 120, 247, 0.16);
         }}
 
-        .btn-default {{
-            background-color: {2};
-            border-color: {2};
-        }}
-
-        .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {{
+        #page-desktop .btn-default, #body_div .btn-default {{
             background-color: {3};
             border-color: {3};
+            color: {5};
         }}
 
-        .btn-default:not(:disabled):not(.disabled):active, .btn-default:not(:disabled):not(.disabled).active, .show>.btn-default.dropdown-toggle {{
-            background-color: {3};
-            border-color: {3};
+        #page-desktop .btn-default:hover, #page-desktop .btn-default:focus, #page-desktop .btn-default.focus, #page-desktop .btn-default:active, #page-desktop .btn-default.active, #page-desktop .open > .dropdown-toggle.btn-default, #body_div .btn-default:hover, #body_div .btn-default:focus, #body_div .btn-default.focus, #body_div .btn-default:active, #body_div .btn-default.active, #body_div .open > .dropdown-toggle.btn-default {{
+            background-color: {4};
+            border-color: {4};
+        }}
+
+        #page-desktop .btn-default:not(:disabled):not(.disabled):active, #page-desktop .btn-default:not(:disabled):not(.disabled).active, #page-desktop .show > .btn-default.dropdown-toggle, #body_div .btn-default:not(:disabled):not(.disabled):active, #body_div .btn-default:not(:disabled):not(.disabled).active, #body_div .show > .btn-default.dropdown-toggle {{
+            background-color: {4};
+            border-color: {4};
         }}
     """.format(
         primary_button_bg,
         primary_button_hover_bg,
+        primary_button_font_color,
         default_button_bg,
-        default_button_hover_bg
+        default_button_hover_bg,
+        default_button_font_color
     )
 
     navbar_color_css = """
@@ -150,7 +156,7 @@ def generate_css(form_data):
     navbar_color_file.write(navbar_color_css)
     navbar_color_file.close()
 
-    return "CSS files generated."
+    return "CSS files generated. Go to frappe bench folder and run this command: bench build --app custom_theme && bench restart <br> After that, hard refresh your browser(ctrl + shift + R)"
 
 @frappe.whitelist()
 def install_theme_icon():

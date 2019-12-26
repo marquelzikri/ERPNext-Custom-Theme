@@ -71,7 +71,7 @@ frappe.ui.form.on('Custom Theme Setup', {
       },
       callback: function(response) {
         if (!response.exc) {
-          console.log(response.message);
+          frappe.msgprint(response.message);
         }
       }
     });

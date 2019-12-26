@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "custom_theme_setup",
  "creation": "2019-10-15 06:20:46.582402",
  "doctype": "DocType",
@@ -7,10 +8,15 @@
  "field_order": [
   "desk_section",
   "desk_bg",
-  "button_section",
+  "button_primary_section",
   "primary_button_bg",
+  "primary_button_font_color",
+  "column_break_5",
   "primary_button_hover_bg",
+  "section_break_7",
   "default_button_bg",
+  "default_button_font_color",
+  "column_break_8",
   "default_button_hover_bg",
   "navbar_section",
   "navbar_bg",
@@ -25,15 +31,10 @@
   {
    "default": "#f8f8f8",
    "fieldname": "desk_bg",
-   "fieldtype": "Data",
+   "fieldtype": "Color",
    "in_list_view": 1,
    "label": "Background Color",
    "reqd": 1
-  },
-  {
-   "fieldname": "button_section",
-   "fieldtype": "Section Break",
-   "label": "Buttons"
   },
   {
    "fieldname": "navbar_section",
@@ -43,21 +44,21 @@
   {
    "default": "#1a3f77",
    "fieldname": "navbar_bg",
-   "fieldtype": "Data",
+   "fieldtype": "Color",
    "label": "Background Color",
    "reqd": 1
   },
   {
    "default": "#123263",
    "fieldname": "navbar_search_bg",
-   "fieldtype": "Data",
+   "fieldtype": "Color",
    "label": "Search Textbox Background Color",
    "reqd": 1
   },
   {
    "default": "#21539e",
    "fieldname": "primary_button_bg",
-   "fieldtype": "Data",
+   "fieldtype": "Color",
    "in_list_view": 1,
    "label": "Button Primary Background Color",
    "reqd": 1
@@ -65,28 +66,59 @@
   {
    "default": "#274b82",
    "fieldname": "primary_button_hover_bg",
-   "fieldtype": "Data",
+   "fieldtype": "Color",
    "in_list_view": 1,
    "label": "Button Primary Background Color on Mouse Hover",
    "reqd": 1
   },
   {
    "fieldname": "default_button_bg",
-   "fieldtype": "Data",
+   "fieldtype": "Color",
    "in_list_view": 1,
    "label": "Button Default Background Color",
    "reqd": 1
   },
   {
    "fieldname": "default_button_hover_bg",
-   "fieldtype": "Data",
+   "fieldtype": "Color",
    "label": "Button Default Background Color on Mouse Hover",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Button Default"
+  },
+  {
+   "fieldname": "button_primary_section",
+   "fieldtype": "Section Break",
+   "label": "Button Primary"
+  },
+  {
+   "fieldname": "primary_button_font_color",
+   "fieldtype": "Color",
+   "label": "Button Primary Font Color",
+   "reqd": 1
+  },
+  {
+   "fieldname": "default_button_font_color",
+   "fieldtype": "Color",
+   "label": "Button Default Font Color",
    "reqd": 1
   }
  ],
  "issingle": 1,
- "modified": "2019-12-25 17:19:18.877773",
- "modified_by": "aulia@kataba.id",
+ "links": [],
+ "modified": "2019-12-25 21:22:47.489968",
+ "modified_by": "Administrator",
  "module": "Custom Theme",
  "name": "Custom Theme Setup",
  "owner": "Administrator",

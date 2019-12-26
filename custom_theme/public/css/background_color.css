@@ -1,13 +1,13 @@
 
-        body {
-            background-color: #36260B;
+        #page-desktop, #body_div {
+            background-color: #EDE1D8;
         }
 
         .breadcrumb {
-            background-color: #36260B;
+            background-color: #EDE1D8;
         }
 
         .modal-backdrop {
-            background-color: #36260B !important;
+            background-color: #EDE1D8 !important;
         }
     

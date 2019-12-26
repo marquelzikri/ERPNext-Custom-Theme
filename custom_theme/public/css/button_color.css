@@ -3,37 +3,39 @@
             color: #e7e7e7
         } */
 
-        .btn-primary {
-            background-color: #21539e;
-            border-color: #21539e;
+        #page-desktop .btn-primary, #body_div .btn-primary {
+            background-color: #771B0C;
+            border-color: #771B0C;
+            color: #d4d0ab;
         }
 
-        .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-            background-color: #274b82;
-            border-color: #274b82;
+        #page-desktop .btn-primary:hover, #page-desktop .btn-primary:focus, #page-desktop .btn-primary.focus, #page-desktop .btn-primary:active, #page-desktop .btn-primary.active, #page-desktop .open > .dropdown-toggle.btn-primary, #body_div .btn-primary:hover, #body_div .btn-primary:focus, #body_div .btn-primary.focus, #body_div .btn-primary:active, #body_div .btn-primary.active, #body_div .open > .dropdown-toggle.btn-primary {
+            background-color: #541308;
+            border-color: #541308;
         }
 
-        .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show>.btn-primary.dropdown-toggle {
-            background-color: #274b82;
-            border-color: #274b82;
+        #page-desktop .btn-primary:not(:disabled):not(.disabled):active, #page-desktop .btn-primary:not(:disabled):not(.disabled).active, #page-desktop .show > .btn-primary.dropdown-toggle, #body_div .btn-primary:not(:disabled):not(.disabled):active, #body_div .btn-primary:not(:disabled):not(.disabled).active, #body_div .show > .btn-primary.dropdown-toggle {
+            background-color: #541308;
+            border-color: #541308;
         }
 
-        .btn-primary:focus, .btn-primary.focus {
+        #page-desktop .btn-primary:focus, #page-desktop .btn-primary.focus, #body_div .btn-primary:focus, #body_div .btn-primary.focus {
             box-shadow: 0 0 0 0.1rem rgba(74, 120, 247, 0.16);
         }
 
-        .btn-default {
-            background-color: #89D989;
-            border-color: #89D989;
+        #page-desktop .btn-default, #body_div .btn-default {
+            background-color: #ECC5A8;
+            border-color: #ECC5A8;
+            color: #802200;
         }
 
-        .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
-            background-color: #6CAB6C;
-            border-color: #6CAB6C;
+        #page-desktop .btn-default:hover, #page-desktop .btn-default:focus, #page-desktop .btn-default.focus, #page-desktop .btn-default:active, #page-desktop .btn-default.active, #page-desktop .open > .dropdown-toggle.btn-default, #body_div .btn-default:hover, #body_div .btn-default:focus, #body_div .btn-default.focus, #body_div .btn-default:active, #body_div .btn-default.active, #body_div .open > .dropdown-toggle.btn-default {
+            background-color: #BFA088;
+            border-color: #BFA088;
         }
 
-        .btn-default:not(:disabled):not(.disabled):active, .btn-default:not(:disabled):not(.disabled).active, .show>.btn-default.dropdown-toggle {
-            background-color: #6CAB6C;
-            border-color: #6CAB6C;
+        #page-desktop .btn-default:not(:disabled):not(.disabled):active, #page-desktop .btn-default:not(:disabled):not(.disabled).active, #page-desktop .show > .btn-default.dropdown-toggle, #body_div .btn-default:not(:disabled):not(.disabled):active, #body_div .btn-default:not(:disabled):not(.disabled).active, #body_div .show > .btn-default.dropdown-toggle {
+            background-color: #BFA088;
+            border-color: #BFA088;
         }
     
