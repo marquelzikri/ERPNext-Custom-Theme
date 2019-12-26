@@ -1,0 +1,20 @@
+[
+ {
+  "default_button_bg": "#ECC5A8",
+  "default_button_font_color": "#802200",
+  "default_button_hover_bg": "#BFA088",
+  "desk_bg": "#FFF5F5",
+  "docstatus": 0,
+  "doctype": "Custom Theme Setup",
+  "modified": "2019-12-26 16:22:34.900067",
+  "name": "Custom Theme Setup",
+  "navbar_bg": "#BAB38D",
+  "navbar_search_bg": "#918C6E",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "primary_button_bg": "#771B0C",
+  "primary_button_font_color": "#d4d0ab",
+  "primary_button_hover_bg": "#541308"
+ }
+]
