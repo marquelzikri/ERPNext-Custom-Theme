@@ -38,6 +38,7 @@ def generate_css(form_data):
     
     desk_bg = form_data["desk_bg"]
     form_layout_bg = form_data["form_layout_bg"]
+    form_sidebar_text_muted_color = form_data["form_sidebar_text_muted_color"]
     
     primary_button_bg = form_data["primary_button_bg"]
     primary_button_hover_bg = form_data["primary_button_hover_bg"]
@@ -54,8 +55,12 @@ def generate_css(form_data):
             background-color: {0};
         }}
         
-        #body_div .form-layout {{
+        #body_div .form-layout, #body_div .layout-main-section {{
             background-color: {1};
+        }}
+
+        .sidebar-menu .text-muted {{
+            color: {2} !important
         }}
 
         .breadcrumb {{
@@ -65,7 +70,7 @@ def generate_css(form_data):
         .modal-backdrop {{
             background-color: {0} !important;
         }}
-    """.format(desk_bg, form_layout_bg)
+    """.format(desk_bg, form_layout_bg, form_sidebar_text_muted_color)
 
     btn_color_css = """
         /* .btn:hover {{

@@ -3,8 +3,12 @@
             background-color: #FFF5F5;
         }
         
-        #body_div .form-layout {
+        #body_div .form-layout, #body_div .layout-main-section {
             background-color: #ffffff;
+        }
+
+        .sidebar-menu .text-muted {
+            color: #a87945 !important
         }
 
         .breadcrumb {
