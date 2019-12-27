@@ -2,6 +2,10 @@
         #page-desktop, #body_div {
             background-color: #FFF5F5;
         }
+        
+        #body_div .form-layout {
+            background-color: #ffffff;
+        }
 
         .breadcrumb {
             background-color: #FFF5F5;

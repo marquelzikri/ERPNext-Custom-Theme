@@ -1,13 +1,15 @@
 [
  {
+  "_liked_by": "[]",
   "default_button_bg": "#ECC5A8",
   "default_button_font_color": "#802200",
   "default_button_hover_bg": "#BFA088",
   "desk_bg": "#FFF5F5",
   "docstatus": 0,
   "doctype": "Custom Theme Setup",
-  "form_layout_bg": null,
-  "modified": "2019-12-26 16:22:34.900067",
+  "form_layout_bg": "#ffffff",
+  "form_sidebar_text_muted_color": null,
+  "modified": "2019-12-27 22:06:46.942685",
   "name": "Custom Theme Setup",
   "navbar_bg": "#BAB38D",
   "navbar_search_bg": "#918C6E",

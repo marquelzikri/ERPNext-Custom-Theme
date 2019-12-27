@@ -9,6 +9,8 @@
   "desk_bg",
   "form_layout_section",
   "form_layout_bg",
+  "form_sidebar_section",
+  "form_sidebar_text_muted_color",
   "button_primary_section",
   "primary_button_bg",
   "primary_button_font_color",
@@ -123,11 +125,23 @@
   {
    "fieldname": "form_layout_bg",
    "fieldtype": "Color",
-   "label": "Background Color"
+   "label": "Background Color",
+   "reqd": 1
+  },
+  {
+   "fieldname": "form_sidebar_section",
+   "fieldtype": "Section Break",
+   "label": "Form Sidebar"
+  },
+  {
+   "fieldname": "form_sidebar_text_muted_color",
+   "fieldtype": "Color",
+   "label": "Text Muted Color",
+   "reqd": 1
   }
  ],
  "issingle": 1,
- "modified": "2019-12-27 22:00:02.540491",
+ "modified": "2019-12-27 22:22:14.619717",
  "modified_by": "Administrator",
  "module": "Custom Theme",
  "name": "Custom Theme Setup",
