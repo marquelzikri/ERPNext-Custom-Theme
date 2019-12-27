@@ -1,5 +1,4 @@
 {
- "actions": [],
  "autoname": "custom_theme_setup",
  "creation": "2019-10-15 06:20:46.582402",
  "doctype": "DocType",
@@ -8,6 +7,8 @@
  "field_order": [
   "desk_section",
   "desk_bg",
+  "form_layout_section",
+  "form_layout_bg",
   "button_primary_section",
   "primary_button_bg",
   "primary_button_font_color",
@@ -113,11 +114,20 @@
    "fieldtype": "Color",
    "label": "Button Default Font Color",
    "reqd": 1
+  },
+  {
+   "fieldname": "form_layout_section",
+   "fieldtype": "Section Break",
+   "label": "Form Layout"
+  },
+  {
+   "fieldname": "form_layout_bg",
+   "fieldtype": "Color",
+   "label": "Background Color"
   }
  ],
  "issingle": 1,
- "links": [],
- "modified": "2019-12-25 21:22:47.489968",
+ "modified": "2019-12-27 22:00:02.540491",
  "modified_by": "Administrator",
  "module": "Custom Theme",
  "name": "Custom Theme Setup",
