@@ -37,6 +37,7 @@ def generate_css(form_data):
     form_data = json.loads(form_data)
     
     desk_bg = form_data["desk_bg"]
+    form_layout_bg = form_data["form_layout_bg"]
     
     primary_button_bg = form_data["primary_button_bg"]
     primary_button_hover_bg = form_data["primary_button_hover_bg"]
@@ -52,6 +53,10 @@ def generate_css(form_data):
         #page-desktop, #body_div {{
             background-color: {0};
         }}
+        
+        #body_div .form-layout {{
+            background-color: {1};
+        }}
 
         .breadcrumb {{
             background-color: {0};
@@ -60,7 +65,7 @@ def generate_css(form_data):
         .modal-backdrop {{
             background-color: {0} !important;
         }}
-    """.format(desk_bg)
+    """.format(desk_bg, form_layout_bg)
 
     btn_color_css = """
         /* .btn:hover {{
